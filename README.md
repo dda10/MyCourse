@@ -1,1 +1,1 @@
-# MyBlog
+# MyCourse
