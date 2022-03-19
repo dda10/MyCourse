@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/ddaa12/MyBlog#readme",
   "lint-staged": {
-    "src/**/*.{js,json,scss}": ["prettier --single-quote --trailing-comma all --tab--width 4 --write"]
+    "src/**/*.{js,json,scss}": [
+      "prettier --single-quote --trailing-comma all --tab--width 4 --write"
+    ]
   },
   "husky": {
     "hooks": {
@@ -33,7 +35,8 @@
   },
   "dependencies": {
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.3"
+    "express-handlebars": "^6.0.3",
+    "mongoose": "^6.2.7"
   },
   "devDependencies": {
     "husky": "^7.0.4",
