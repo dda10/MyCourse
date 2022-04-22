@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const app = express();
 const hbs = require('express-handlebars');
 const path = require('path');
-const port = 3000;
+const port = 3001;
 const route = require('./routes');
 const db = require('./config/db');
 
@@ -22,10 +22,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Template engine using handlebars
 app.engine(
-  'hbs',
-  hbs.engine({
-    extname: '.hbs',
-  })
+    'hbs',
+    hbs.engine({
+        extname: '.hbs',
+    })
 );
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
@@ -35,5 +35,5 @@ route(app);
 
 // Port
 app.listen(port, () => {
-  console.log(`App is listening at http://localhost:${port}`);
+    console.log(`App is listening at http://localhost:${port}`);
 });
